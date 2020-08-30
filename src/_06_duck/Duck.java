@@ -1,4 +1,4 @@
-package _04_popcorn;
+package _06_duck;
 
 public class Duck {
 
@@ -10,12 +10,12 @@ public class Duck {
 	       this.numberOfFriends = numberOfFriends;
 	}
 		
-	void eat() {
+	void quack() {
 		
 		
 		
 	}
-	void poop() {
+	void waddle() {
 		
 		
 		
