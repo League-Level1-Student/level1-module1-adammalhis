@@ -5,7 +5,6 @@ package _04_popcorn;
  *    Level 1
  */
 
-
 /* Your mission and you have to accept it:
  * Create a PopcornMaker class (in the popcorn package) and add a main method to it. 
  * The main method should create a bag of Popcorn and cook it in the microwave.
@@ -61,7 +60,7 @@ public class Popcorn {
 			System.out.println("Don't eat the popcorn. Not all the kernels have popped!");
 		}
 	}
-	
+
 	public void applyHeat() {
 		pause();
 
@@ -80,7 +79,5 @@ public class Popcorn {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
-
-

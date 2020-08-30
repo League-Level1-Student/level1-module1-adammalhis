@@ -1,30 +1,12 @@
 package _04_popcorn;
 
+import java.util.Random;
+
 public class VaultRunner {
 public static void main(String[] args) {
 
-	Vault vault= new Vault();
-	for (int i=0; i<1000001; i++) {
-	vault.tryCode(i);
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}		
+	Vault vault= new Vault(new Random().nextInt(1000000));
+	JamesBond jamesBond= new JamesBond();
+	System.out.println(jamesBond.findCode(vault));
+}
 }
