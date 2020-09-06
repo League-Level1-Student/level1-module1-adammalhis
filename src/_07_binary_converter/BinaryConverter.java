@@ -1,5 +1,6 @@
 package _07_binary_converter;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,6 +19,7 @@ public class BinaryConverter implements ActionListener {
 	JLabel outputField= new JLabel();
 	JTextField inputField= new JTextField(20);
 	
+	
 	public static void main(String[] args) {
 		
 		
@@ -28,11 +30,17 @@ public class BinaryConverter implements ActionListener {
 	private void add () {
 	
 		frame.add(panel);
-		panel.add(button);
+		frame.setVisible(true);
+		frame.setLocation(700, 500);
+		frame.setTitle("Convert 8 bits of binary to ASCII");
+		outputField.setPreferredSize(new Dimension(50, 100));
 		panel.add(inputField);
+		panel.add(button);
 		panel.add(outputField);
+		button.setText("convert");
+		
 		frame.pack();
-		button.setText("press");
+		
 		
 	button.addActionListener(this);
 	
@@ -42,8 +50,9 @@ public class BinaryConverter implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
-	
-		
+		String output= convert(inputField.getText());	
+		outputField.setText(output);
+		frame.pack();
 		
 		
 		
